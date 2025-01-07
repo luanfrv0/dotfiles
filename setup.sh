@@ -13,7 +13,7 @@ if [ $# -eq 0 ]; then
   . ~/.dotfiles/curl/setup.sh
   . ~/.dotfiles/gpg/setup.sh
   . ~/.dotfiles/git/setup.sh
-  . ~/.dotfiles/alacritty/setup.sh
+  #. ~/.dotfiles/alacritty/setup.sh
   . ~/.dotfiles/bash/setup.sh
   . ~/.dotfiles/vim/setup.sh
   . ~/.dotfiles/asdf/setup.sh
@@ -26,7 +26,7 @@ if [ $# -eq 0 ]; then
   #. ~/.dotfiles/tmuxinator/setup.sh
   . ~/.dotfiles/spotify/setup.sh
   . ~/.dotfiles/vscode/setup.sh
-  . ~/.dotfiles/telegram/setup.sh
+  #. ~/.dotfiles/telegram/setup.sh
   #. ~/.dotfiles/insomnia/setup.sh
   #. ~/.dotfiles/typora/setup.sh
   #. ~/.dotfiles/jetbrains-mono/setup.sh
