@@ -5,3 +5,4 @@ git checkout "$(git describe --abbrev=0 --tags)"
 cd
 ln -sf ~/.dotfiles/asdf/tool-versions ~/.tool-versions
 source ~/.bashrc
+. ~/.bashrc

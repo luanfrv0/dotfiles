@@ -17,7 +17,7 @@ if [ $# -eq 0 ]; then
   . ~/.dotfiles/bash/setup.sh
   . ~/.dotfiles/vim/setup.sh
   . ~/.dotfiles/asdf/setup.sh
-  #. ~/.dotfiles/ruby/setup.sh
+  . ~/.dotfiles/ruby/setup.sh
   #. ~/.dotfiles/nodejs/setup.sh
   #. ~/.dotfiles/yarn/setup.sh
   #. ~/.dotfiles/python/setup.sh
