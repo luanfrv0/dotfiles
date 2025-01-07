@@ -1,37 +1,7 @@
 {
   "workbench.startupEditor": "none",
-  "explorer.confirmDelete": false,
-  "security.workspace.trust.untrustedFiles": "open",
-  "window.restoreWindows": "none",
-  "editor.fontFamily": "'JetBrains Mono', 'Droid Sans Mono', 'monospace', monospace",
-  "editor.tabSize": 2,
-  "editor.fontSize": 16,
-  "editor.fontWeight": 1,
-  "editor.cursorStyle": "block",
-  "editor.wordWrap": "on",
-  "editor.formatOnPaste": true,
-  "editor.links": false,
-  "editor.formatOnSave": true,
-  "editor.occurrencesHighlight": "off",
-  "redhat.telemetry.enabled": false,
-  "prettier.prettierPath": "~/.asdf/shims/prettier",
-  "eslint.nodePath": "~/.asdf/shims/eslint",
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[ruby]": {
-    "editor.defaultFormatter": "misogi.ruby-rubocop",
-    "ruby.rubocop.executePath": "~/.asdf/shims/rubocop"
-  },
-  "editor.minimap.enabled": false,
-  "workbench.preferredDarkColorTheme": "Dracula Pro (Van Helsing)",
-  "workbench.preferredHighContrastColorTheme": "Dracula Pro (Van Helsing)",
-  "workbench.iconTheme": "vs-minimal",
-  "workbench.tree.renderIndentGuides": "always",
-  "terminal.integrated.copyOnSelection": true,
-  "terminal.integrated.cursorBlinking": true,
-  "vim.vimrc.enable": true,
-  "vim.vimrc.path": "~/.vimrc",
-  "update.showReleaseNotes": false,
-  "workbench.colorTheme": "Iceberg"
+  "workbench.colorTheme": "Iceberg",
+  "editor.fontFamily": "'IBM Plex Mono', monospace",
+  "database-client.autoSync": true,
+  "redhat.telemetry.enabled": false
 }
