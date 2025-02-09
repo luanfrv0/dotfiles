@@ -98,7 +98,7 @@ apt-update() {
 # Loads asdf (https://github.com/asdf-vm/asdf/)
 if [ -d $HOME/.asdf ]; then
   . $HOME/.asdf/asdf.sh
-  . $HOME/.asdf/completions/asdf.bash
+  # . $HOME/.asdf/completions/asdf.bash
 fi
 
 #export PATH="$PATH:$(yarn global bin)"
@@ -108,6 +108,8 @@ export PATH="$PATH:$HOME/.local/bin"
 bind '"\e[A": history-search-backward'
 
 # loads development env vars in general
-# . ~/.env.global
+. ~/.env.global
+
 
 # echo "Wake up, $USER..."
+
