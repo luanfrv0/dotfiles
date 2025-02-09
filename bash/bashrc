@@ -79,26 +79,26 @@ if [ -f ~/.aliases ]; then
 fi
 
 # utilities functions to use youtube-dl
-dl-track() {
-  youtube-dl -x --audio-format mp3 --no-playlist -o '%(title)s.%(ext)s' $1
-}
+#dl-track() {
+#  youtube-dl -x --audio-format mp3 --no-playlist -o '%(title)s.%(ext)s' $1
+#}
 
-dl-playlist() {
-  youtube-dl -x --audio-format mp3 -o '%(title)s.%(ext)s' $1
-}
+#dl-playlist() {
+#  youtube-dl -x --audio-format mp3 -o '%(title)s.%(ext)s' $1
+#}
 
-apt-update() {
-  sudo apt update -y
-  sudo apt upgrade -y
-  sudo apt autoremove -y
-  sudo apt autoclean -y
-  sudo apt clean -y
-}
+#apt-update() {
+#  sudo apt update -y
+#  sudo apt upgrade -y
+#  sudo apt autoremove -y
+#  sudo apt autoclean -y
+#  sudo apt clean -y
+#}
 
 # Loads asdf (https://github.com/asdf-vm/asdf/)
 if [ -d $HOME/.asdf ]; then
   . $HOME/.asdf/asdf.sh
-  # . $HOME/.asdf/completions/asdf.bash
+  #. $HOME/.asdf/completions/asdf.bash
 fi
 
 #export PATH="$PATH:$(yarn global bin)"
@@ -110,6 +110,17 @@ bind '"\e[A": history-search-backward'
 # loads development env vars in general
 . ~/.env.global
 
-
 # echo "Wake up, $USER..."
 
+##########################################################
+#                   ANGEPLUS DEVCONTAINER                #
+##########################################################
+export ANGEPLUS_INFRA_LOCAL_DIR=/home/ferreri/dev/ferreri/angeplus
+export PATH=$ANGEPLUS_INFRA_LOCAL_DIR/bin:$PATH
+
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/ferreri/google-cloud-sdk/path.bash.inc' ]; then . '/home/ferreri/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/ferreri/google-cloud-sdk/completion.bash.inc' ]; then . '/home/ferreri/google-cloud-sdk/completion.bash.inc'; fi

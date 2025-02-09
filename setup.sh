@@ -8,16 +8,16 @@
 #
 if [ $# -eq 0 ]; then
   echo 'updating apt packages...'
-  sudo apt update -y
+  #sudo apt update -y
 
-  . ~/.dotfiles/curl/setup.sh
+  #. ~/.dotfiles/curl/setup.sh
   . ~/.dotfiles/gpg/setup.sh
-  . ~/.dotfiles/git/setup.sh
+  #. ~/.dotfiles/git/setup.sh
   #. ~/.dotfiles/alacritty/setup.sh
-  . ~/.dotfiles/bash/setup.sh
+  #. ~/.dotfiles/bash/setup.sh
   . ~/.dotfiles/vim/setup.sh
   . ~/.dotfiles/asdf/setup.sh
-  . ~/.dotfiles/ruby/setup.sh
+  #. ~/.dotfiles/ruby/setup.sh
   #. ~/.dotfiles/nodejs/setup.sh
   #. ~/.dotfiles/yarn/setup.sh
   #. ~/.dotfiles/python/setup.sh
@@ -30,7 +30,7 @@ if [ $# -eq 0 ]; then
   #. ~/.dotfiles/insomnia/setup.sh
   #. ~/.dotfiles/typora/setup.sh
   #. ~/.dotfiles/jetbrains-mono/setup.sh
-  . ~/.dotfiles/dropbox/setup.sh
+  #. ~/.dotfiles/dropbox/setup.sh
   #. ~/.dotfiles/chrome/setup.sh
   #. ~/.dotfiles/dracula/setup.sh
 elif [ $1 = "wsl" ];then

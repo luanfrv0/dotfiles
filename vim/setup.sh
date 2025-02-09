@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 # TODO: fix build-dep https://askubuntu.com/a/1512043
-sudo apt build-dep -y vim
+#sudo apt build-dep -y vim
 git clone https://github.com/vim/vim.git ~/vim
 cd ~/vim
 ./configure --with-x --enable-python3interp
