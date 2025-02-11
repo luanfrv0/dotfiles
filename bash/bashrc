@@ -107,6 +107,11 @@ export PATH="$PATH:$HOME/.local/bin"
 # Search backwrds on the history
 bind '"\e[A": history-search-backward'
 
+ang-acc() {
+  gcloud container clusters get-credentials angeplus-$1 --zone us-east1-b --project angeplus
+  kubectl -n angeplus-$1 exec -ti deployment/$2 -- sh
+}
+
 # loads development env vars in general
 . ~/.env.global
 
