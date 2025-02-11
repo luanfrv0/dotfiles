@@ -79,24 +79,24 @@ vnoremap fj <esc>
 " set statusline=%<\ %F\ %m%=%y%r\ L\ %l\/\%L\ C\ %c%V\ (%P)
 " set laststatus=2
 
-hi Normal ctermbg=233
-hi Comment ctermbg=233 cterm=none
-hi CursorLine ctermbg=232
+"hi Normal ctermbg=233
+"hi Comment ctermbg=233 cterm=none
+hi CursorLine ctermbg=234
+hi ColorColumn ctermbg=235
 "hi LineNr ctermfg=240 ctermbg=233 cterm=none
 "hi CursorLineNr ctermfg=240 ctermbg=233 cterm=none
 "hi StatusLine ctermbg=234 ctermfg=255 cterm=none
 "hi StatusLineNc ctermbg=235 ctermfg=245 cterm=none
-hi ColorColumn ctermbg=234
-"hi VertSplit ctermbg=235 ctermfg=235 cterm=none
-"hi TabLine ctermbg=235 ctermfg=245 cterm=none
-"hi TabLineSel ctermbg=233 ctermfg=255 cterm=none
-"hi TabLineFill ctermbg=235 ctermfg=245 cterm=none
-hi Folded ctermbg=233 ctermfg=242 cterm=none
+hi VertSplit ctermbg=235 ctermfg=235 cterm=none
+hi TabLine ctermbg=235 ctermfg=245 cterm=none
+hi TabLineSel ctermbg=233 ctermfg=255 cterm=none
+hi TabLineFill ctermbg=235 ctermfg=245 cterm=none
+hi Folded ctermbg=235 ctermfg=242 cterm=none
 
-"hi DraculaCyanItalic cterm=none
-"hi DraculaGreenItalic cterm=none
-"hi DraculaOrangeItalic cterm=none
-"hi DraculaPurpleItalic cterm=none
+hi DraculaCyanItalic cterm=none
+hi DraculaGreenItalic cterm=none
+hi DraculaOrangeItalic cterm=none
+hi DraculaPurpleItalic cterm=none
 
 "hi! link pythonTripleQuotes Comment
 "hi! link pythonDocstring Comment
