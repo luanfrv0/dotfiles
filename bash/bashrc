@@ -115,6 +115,11 @@ ang-acc() {
 # loads development env vars in general
 . ~/.env.global
 
-
 # echo "Wake up, $USER..."
+
+##########################################################
+#                   ANGEPLUS DEVCONTAINER                #
+##########################################################
+export ANGEPLUS_INFRA_LOCAL_DIR=/home/luan/dev/ferreri/angeplus
+export PATH=$ANGEPLUS_INFRA_LOCAL_DIR/bin:$PATH
 
