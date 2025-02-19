@@ -112,6 +112,13 @@ ang-acc() {
   kubectl -n angeplus-$1 exec -ti deployment/$2 -- sh
 }
 
+gbprune() {
+  git remote prune --dry-run origin
+  git remote prune origin
+  git fetch -p
+  git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -d
+}
+
 # loads development env vars in general
 . ~/.env.global
 
