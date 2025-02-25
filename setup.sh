@@ -24,6 +24,7 @@ if [ $# -eq 0 ]; then
   #. ~/.dotfiles/java/setup.sh
   #. ~/.dotfiles/tmux/setup.sh
   #. ~/.dotfiles/tmuxinator/setup.sh
+  #. ~/.dotfiles/glab/setup.sh
   . ~/.dotfiles/spotify/setup.sh
   . ~/.dotfiles/vscode/setup.sh
   #. ~/.dotfiles/telegram/setup.sh
