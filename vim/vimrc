@@ -10,7 +10,7 @@ set nobackup
 set nowritebackup
 set autowrite
 set foldmethod=indent
-set nofoldenable " All folds open when entering a buffer
+"set nofoldenable " All folds open when entering a buffer
 set textwidth=80
 set colorcolumn=81
 set autoindent
@@ -227,6 +227,7 @@ nnoremap <leader>r :NERDTreeFocus<cr>
 " make sure relative line numbers are used
 autocmd FileType nerdtree setlocal relativenumber
 
+autocmd FileType markdown setlocal foldmethod=marker
 
 " vim-prettier settings
 let g:prettier#autoformat = 1
