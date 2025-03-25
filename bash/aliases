@@ -40,7 +40,6 @@ alias gstd="g stash drop"
 alias gstl="g stash list"
 alias gstad="g stash list apply && g stash drop"
 alias grp="g grep"
-alias gbprune="git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d"
 
 alias d="docker"
 alias c="docker compose"
