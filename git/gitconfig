@@ -10,4 +10,4 @@
 [push]
         default = current
 [pull]
-        rebase = true
+	ff = only
