@@ -92,6 +92,7 @@ vnoremap fj <esc>
 "hi TabLineFill ctermbg=235 ctermfg=245 cterm=none
 "hi Folded ctermbg=233 ctermfg=242 cterm=none
 
+hi DraculaTodo cterm=none
 "hi DraculaCyanItalic cterm=none
 "hi DraculaGreenItalic cterm=none
 "hi DraculaOrangeItalic cterm=none
