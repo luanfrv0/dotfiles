@@ -35,6 +35,7 @@ set shiftround " Round indent to multiple of shiftwidth
 
 " Visual settings
 set number
+set relativenumber
 set numberwidth=1
 set background=dark
 set cursorline
