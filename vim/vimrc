@@ -9,7 +9,9 @@ set noswapfile
 set nobackup
 set nowritebackup
 set autowrite
-set foldmethod=indent
+"set foldmethod=indent
+set foldmethod=syntax
+"set foldnestmax=1
 "set nofoldenable " All folds open when entering a buffer
 set textwidth=80
 set colorcolumn=81
