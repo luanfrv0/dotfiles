@@ -41,7 +41,7 @@ set relativenumber
 set numberwidth=1
 set background=dark
 set cursorline
-set guifont=IBM\ Plex\ Mono\ 11
+"set guifont=IBM\ Plex\ Mono\ Light 11
 
 " colorscheme
 syntax on
