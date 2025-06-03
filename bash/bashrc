@@ -122,8 +122,11 @@ gbprune() {
 }
 
 dprune() {
-  docker stop $(docker ps -aq) 
   docker system prune -f
+}
+
+dstop() {
+  docker stop $(docker ps -aq)
 }
 
 # loads development env vars in general
