@@ -232,6 +232,7 @@ nnoremap <leader>r :NERDTreeFocus<cr>
 autocmd FileType nerdtree setlocal relativenumber
 
 autocmd FileType markdown setlocal foldmethod=marker
+autocmd FileType ruby setlocal foldlevel=2
 
 " vim-prettier settings
 let g:prettier#autoformat = 1
