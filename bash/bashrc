@@ -121,10 +121,6 @@ gbprune() {
   git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -d
 }
 
-dprune() {
-  docker system prune -f
-}
-
 dstop() {
   docker stop $(docker ps -aq)
 }
@@ -132,6 +128,10 @@ dstop() {
 drmc() {
   docker rm $(docker ps -aq)
   docker volume rm $(docker volume ls -q)
+}
+
+drmi() {
+  docker rmi -f $(docker images -aq)
 }
 
 # loads development env vars in general
