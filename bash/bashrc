@@ -129,6 +129,11 @@ dstop() {
   docker stop $(docker ps -aq)
 }
 
+drmc() {
+  docker rm $(docker ps -aq)
+  docker volume rm $(docker volume ls -q)
+}
+
 # loads development env vars in general
 . ~/.env.global
 
