@@ -71,3 +71,8 @@ alias angplan="cd ~/dev/ferreri/angeplus/angeplus-plan-svc"
 alias angplanw="cd ~/dev/ferreri/angeplus/angeplus-plan-web"
 alias angcon="cd ~/dev/ferreri/angeplus/angeplus-contract-svc"
 alias angconw="cd ~/dev/ferreri/angeplus/angeplus-contract-web"
+
+alias tsks="cd ~/dev/tsks"
+alias tsksw="cd ~/dev/tsks/web"
+alias tsksa="cd ~/dev/tsks/api"
+alias tsks="cd ~/dev/tsks"
