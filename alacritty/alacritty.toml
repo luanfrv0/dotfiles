@@ -1,4 +1,4 @@
-general.import = [
+import = [
   "~/Documents/dracula_pro/themes/alacritty/themes/dracula-pro-van-helsing.toml"
 ]
 
