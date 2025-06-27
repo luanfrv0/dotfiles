@@ -76,3 +76,5 @@ alias tsks="cd ~/dev/tsks"
 alias tsksw="cd ~/dev/tsks/web"
 alias tsksa="cd ~/dev/tsks/api"
 alias tsks="cd ~/dev/tsks"
+
+alias notes="cd ~/doc/notes"
