@@ -73,3 +73,10 @@ alias angcon="cd ~/dev/ferreri/angeplus/angeplus-contract-svc"
 alias angconw="cd ~/dev/ferreri/angeplus/angeplus-contract-web"
 alias angsys="cd ~/dev/ferreri/angeplus/angeplus-system-event-svc"
 alias angsysw="cd ~/dev/ferreri/angeplus/angeplus-system-event-web"
+
+alias tsks="cd ~/dev/tsks"
+alias tsksw="cd ~/dev/tsks/web"
+alias tsksa="cd ~/dev/tsks/api"
+alias tsks="cd ~/dev/tsks"
+
+alias notes="cd ~/doc/notes"

@@ -134,6 +134,13 @@ drmi() {
   docker rmi -f $(docker images -aq)
 }
 
+drmall() {
+  dstop
+  drmc
+  drmi
+  docker system prune -a -f
+}
+
 # loads development env vars in general
 . ~/.env.global
 
