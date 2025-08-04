@@ -6,7 +6,7 @@ import = [
 columns = 200
 lines = 50
 [font]
-size = 12
+size = 11
 [font.normal]
 family = 'IBM Plex Mono'
 style = 'Light'
