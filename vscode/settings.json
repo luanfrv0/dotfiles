@@ -1,6 +1,6 @@
 {
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "Iceberg",
+  "workbench.colorTheme": "GitHub Light",
   "editor.fontFamily": "'IBM Plex Mono', monospace",
   "database-client.autoSync": true,
   "redhat.telemetry.enabled": false
