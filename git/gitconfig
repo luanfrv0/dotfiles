@@ -11,3 +11,6 @@
         default = current
 [pull]
 	rebase = false
+[credential "https://gitlab.com"]
+	helper = 
+	helper = !/home/linuxbrew/.linuxbrew/Cellar/glab/1.65.0/bin/glab auth git-credential

@@ -155,3 +155,4 @@ export PATH=$ANGEPLUS_INFRA_LOCAL_DIR/bin:$PATH
 export BAT_CONFIG_PATH="$HOME/.dotfiles/bat/batrc"
 export BAT_CONFIG_DIR="$HOME/.dotfiles/bat/"
 
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
