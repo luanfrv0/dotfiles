@@ -1,5 +1,5 @@
 import = [
-  "~/Documents/dracula_pro/themes/alacritty/themes/dracula-pro-alucard.toml"
+  "~/Documents/dracula_pro/themes/alacritty/themes/dracula-pro.toml"
 ]
 
 [window.dimensions]
