@@ -1,7 +1,38 @@
 {
-  "workbench.startupEditor": "none",
-  "workbench.colorTheme": "GitHub Light",
+  "workbench.colorTheme": "GitHub Light Default",
   "editor.fontFamily": "'IBM Plex Mono', monospace",
   "database-client.autoSync": true,
-  "redhat.telemetry.enabled": false
+  "redhat.telemetry.enabled": false,
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "Ubuntu (WSL)": {
+      "path": "C:\\Windows\\System32\\bash.exe",
+      "args": [
+        "-d",
+        "Ubuntu"
+      ]
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
+  "workbench.startupEditor": "none",
+  "security.allowedUNCHosts": [
+    "wsl.localhost"
+  ],
+  "editor.minimap.enabled": false,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "editor.wordWrap": "on"
 }
