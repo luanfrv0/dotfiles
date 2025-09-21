@@ -1,3 +1,13 @@
+vim.pack.add({
+  {src='https://github.com/nvim-tree/nvim-tree.lua'},
+  {src='https://github.com/nvim-lua/plenary.nvim.git'},
+})
+
+-- disable netrw at the very start of your init.lua
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+require("nvim-tree").setup()
+
 -- colorscheme
 vim.cmd("syntax on")
 vim.cmd("syntax enable")
@@ -7,6 +17,7 @@ vim.cmd("colorscheme dracula_pro")
 
 vim.cmd("hi CursorLine ctermbg=233")
 vim.cmd("hi DraculaTodo cterm=none")
+vim.cmd("hi ColorColumn ctermfg=233")
 
 -- Visual settings
 vim.o.number=true
@@ -19,12 +30,9 @@ vim.o.splitright=true
 vim.o.splitbelow=true
 vim.o.wrap=true
 vim.o.linebreak=true
-vim.o.noswapfile=true
-vim.o.nobackup=true
-vim.o.nowritebackup=true
 vim.o.autowrite=true
 vim.o.textwidth=80
-vim.o.colorcolumn=81
+vim.o.colorcolumn="81"
 vim.o.autoindent=true
 vim.o.incsearch=true
 vim.o.hlsearch=true
@@ -72,3 +80,5 @@ vim.api.nvim_set_keymap('n', '<c-h>', '<c-w>h', { noremap = true })
 
 vim.api.nvim_set_keymap('n', '<leader>q', ':q!', { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>w', ':w!', { noremap = true })
+
+vim.api.nvim_set_keymap('n', '<leader>t', ':NvimTreeToggle<CR>', { noremap = true })
