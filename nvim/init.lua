@@ -83,7 +83,7 @@ vim.api.nvim_set_keymap('n', '<c-l>', '<c-w>l', { noremap = true })
 vim.api.nvim_set_keymap('n', '<c-j>', '<c-w>j', { noremap = true })
 vim.api.nvim_set_keymap('n', '<c-h>', '<c-w>h', { noremap = true })
 
-vim.api.nvim_set_keymap('n', '<leader>q', ':q!', { noremap = true })
-vim.api.nvim_set_keymap('n', '<leader>w', ':w!', { noremap = true })
+vim.api.nvim_set_keymap('n', '<leader>q', ':q!<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<leader>w', ':w!<CR>', { noremap = true })
 
 vim.api.nvim_set_keymap('n', '<leader>t', ':NvimTreeToggle<CR>', { noremap = true })
