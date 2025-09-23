@@ -1,6 +1,7 @@
 vim.pack.add({
   {src='https://github.com/nvim-tree/nvim-tree.lua'},
   {src='https://github.com/nvim-lua/plenary.nvim.git'},
+  {src='https://github.com/nvim-tree/nvim-web-devicons'}
 })
 
 -- disable netrw at the very start of your init.lua
