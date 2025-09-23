@@ -14,8 +14,14 @@ if [ $# -eq 0 ]; then
   . ~/.dotfiles/gpg/setup.sh
   . ~/.dotfiles/git/setup.sh
   . ~/.dotfiles/bash/setup.sh
-  . ~/.dotfiles/dropbox/setup.sh
+  . ~/.dotfiles/alacritty/setup.sh
+  . ~/.dotfiles/tmux/setup.sh
+  . ~/.dotfiles/bat/setup.sh
+  . ~/.dotfiles/bat/setup.sh
+  . ~/.dotfiles/asdf/setup.sh
+  . ~/.dotfiles/ibm-plex-mono/setup.sh
   #. ~/.dotfiles/chrome/setup.sh
+  #. ~/.dotfiles/dropbox/setup.sh
 elif [ $1 = "wsl" ];then
   . ~/.dotfiles/git/setup.sh
   . ~/.dotfiles/bash/setup.sh
