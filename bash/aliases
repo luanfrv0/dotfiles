@@ -80,3 +80,5 @@ alias tsksa="cd ~/dev/tsks/api"
 alias tsks="cd ~/dev/tsks"
 
 alias notes="cd ~/doc/notes"
+
+alias postman="Postman"
