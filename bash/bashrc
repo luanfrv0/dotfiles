@@ -147,6 +147,8 @@ drmall() {
 # echo "Wake up, $USER..."
 
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+export PATH="$PATH:/opt/Postman"
+export PATH="$PATH:/opt/prism-launcher/PrismLauncher-Linux-x86_64.AppImage"
 
 ##########################################################
 #                   ANGEPLUS DEVCONTAINER                #
