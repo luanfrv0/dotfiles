@@ -51,6 +51,8 @@ vim.o.expandtab=true
 -- Round indent to multiple of shiftwidth
 vim.o.shiftround=true
 
+vim.o.clipboard = 'unnamedplus'
+
 vim.api.nvim_create_autocmd({ "FileType" }, {
   pattern = 'python',
   callback = function()
