@@ -16,6 +16,9 @@ if [ $# -eq 0 ]; then
   . ~/.dotfiles/bat/setup.sh
   . ~/.dotfiles/asdf/setup.sh
   . ~/.dotfiles/ibm-plex-mono/setup.sh
+  . ~/.dotfiles/docker/setup.sh
+  . ~/.dotfiles/nvim/setup.sh
+  . ~/.dotfiles/typora/setup.sh
   . ~/.dotfiles/chrome/setup.sh
   . ~/.dotfiles/dropbox/setup.sh
 else
