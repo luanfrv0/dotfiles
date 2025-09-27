@@ -1,13 +1,10 @@
 #!/usr/bin/env sh
 #
-# script used for setting up a fresh installation of Ubuntu with custom dotfiles
-#
 # Usage:
 #     ./setup.sh
 #     ./setup.sh <module> (e.g ./setup.sh vim)
 #
 if [ $# -eq 0 ]; then
-  echo 'updating apt packages...'
   sudo apt update -y
 
   . ~/.dotfiles/curl/setup.sh
@@ -17,22 +14,10 @@ if [ $# -eq 0 ]; then
   . ~/.dotfiles/alacritty/setup.sh
   . ~/.dotfiles/tmux/setup.sh
   . ~/.dotfiles/bat/setup.sh
-  . ~/.dotfiles/bat/setup.sh
   . ~/.dotfiles/asdf/setup.sh
   . ~/.dotfiles/ibm-plex-mono/setup.sh
-  #. ~/.dotfiles/chrome/setup.sh
-  #. ~/.dotfiles/dropbox/setup.sh
-elif [ $1 = "wsl" ];then
-  . ~/.dotfiles/git/setup.sh
-  . ~/.dotfiles/bash/setup.sh
-  . ~/.dotfiles/asdf/setup.sh
-  #. ~/.dotfiles/ruby/setup.sh
-  #. ~/.dotfiles/nodejs/setup.sh
-  #. ~/.dotfiles/yarn/setup.sh
-  #. ~/.dotfiles/python/setup.sh
-  #. ~/.dotfiles/java/setup.sh
-  . ~/.dotfiles/tmux/setup.sh
-  #. ~/.dotfiles/tmuxinator/setup.sh
+  . ~/.dotfiles/chrome/setup.sh
+  . ~/.dotfiles/dropbox/setup.sh
 else
   . ~/.dotfiles/$1/setup.sh
 fi
