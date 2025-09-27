@@ -4,6 +4,8 @@ sudo add-apt-repository 'deb https://typora.io/linux ./'
 sudo apt update -y
 sudo apt install -y typora
 cd
-curl https://github.com/Zabriskije/Typora-GitHub-Themes/archive/master.zip > ~/typora.zip
-unzip ~/typora.zip
-cp ~/Typora-GitHub-Themes-main/github-dark-default.css ~/.config/Typora/themes/
+
+DOWNLOAD_TYPORA_PATH="$HOME/typora.zip"
+wget https://github.com/Zabriskije/Typora-GitHub-Themes/archive/refs/heads/main.zip -o $DOWNLOAD_TYPORA_PATH
+unzip $DOWNLOAD_TYPORA_PATH
+cp "$HOME/Typora-GitHub-Themes-main/github-dark-default.css" "$HOME/.config/Typora/themes/"
