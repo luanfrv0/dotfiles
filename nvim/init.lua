@@ -21,9 +21,9 @@ vim.cmd("packadd! dracula_pro")
 vim.g.dracula_colorterm = 0
 vim.cmd("colorscheme dracula_pro")
 
-vim.cmd("hi CursorLine ctermbg=233")
-vim.cmd("hi DraculaTodo cterm=none")
-vim.cmd("hi ColorColumn ctermfg=233")
+vim.api.nvim_set_hl(0, 'CursorLine', {bg = 0})
+vim.api.nvim_set_hl(0, 'ColorColumn', {bg = 0})
+vim.api.nvim_set_hl(0, 'DraculaTodo', {bg = 'none'})
 
 -- Visual settings
 vim.o.number=true
