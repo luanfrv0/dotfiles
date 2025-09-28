@@ -69,6 +69,8 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
   end
 })
 
+vim.g.mapleader = " "
+
 -- tks @philss for the mappings below 👍(from https://github.com/philss/dotfiles)
 -- Mapping <tab> to change tabs navigation
 vim.api.nvim_set_keymap('n', '<tab>', ':tabnext<CR>', { noremap = true })
@@ -77,8 +79,6 @@ vim.api.nvim_set_keymap('n', '<S-tab>', ':tabprevious<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', 'fj', '<esc>', { noremap = true })
 vim.api.nvim_set_keymap('i', 'fj', '<esc>', { noremap = true })
 vim.api.nvim_set_keymap('v', 'fj', '<esc>', { noremap = true })
-
-vim.g.mapleader = "-"
 
 -- Make splits navigation easies
 vim.api.nvim_set_keymap('n', '<c-k>', '<c-w>k', { noremap = true })
