@@ -4,3 +4,4 @@ ruby 3.2.2
 python 3.13.0t
 java openjdk-23
 glab 1.72.0
+neovim stable
