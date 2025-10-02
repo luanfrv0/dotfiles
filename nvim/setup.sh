@@ -15,3 +15,7 @@ COLORSCHEME_COLORS_PATH="$COLORSCHEME_PATH/colors"
 ln -sf "$MODULE_PATH" "$SETUP_PATH"
 cp -r "$COLORSCHEME_AUTOLOAD_PATH" "$SETUP_PATH/"
 cp -r "$COLORSCHEME_COLORS_PATH" "$SETUP_PATH/"
+
+# extra steps
+# git config --global url."https://oauth2:${GITLAB_AUTH_TOKEN}@gitlab.com/".insteadOf "https://gitlab.com"
+# mason instal ruby-lsp
