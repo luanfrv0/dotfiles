@@ -8,9 +8,12 @@ MODULE_FILE_NAME="init.lua"
 MODULE_FILE_PATH="$MODULE_PATH/$MODULE_FILE_NAME"
 SETUP_PATH="$HOME/.config/nvim"
 SETUP_FILE_PATH="$SETUP_PATH/$MODULE_FILE_NAME"
+COLORSCHEME_PATH="$HOME/doc/dracula_pro"
+COLORSCHEME_AUTOLOAD_PATH="$COLORSCHEME_PATH/autoload"
+COLORSCHEME_COLORS_PATH="$COLORSCHEME_PATH/colors"
 
 mkdir -p $SETUP_PATH
 ln -sf "$MODULE_FILE_PATH" "$SETUP_FILE_PATH"
 
-nvim +'call mkdir(stdpath("data")."/site/pack/themes/start", "p")' +q
-cp -R "$HOME/doc/dracula_pro/themes/vim" "$(nvim -es +"put =stdpath('data')" +print +'q!')"/site/pack/themes/start/dracula_pro
+cp -r "$COLORSCHEME_AUTOLOAD_PATH" "$SETUP_PATH/"
+cp -r "$COLORSCHEME_COLORS_PATH" "$SETUP_PATH/"
