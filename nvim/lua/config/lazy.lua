@@ -15,6 +15,23 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+  {
+    "nvim-treesitter/nvim-treesitter",
+    branch = "master",
+    lazy = false,
+    build = ":TSUpdate",
+    opts = { ensure_installed = { "ruby" } },
+  },
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        ruby_lsp = {
+          enabled = true,
+        },
+      },
+    },
+  },
   spec = {
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
