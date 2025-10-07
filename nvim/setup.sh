@@ -1,22 +1,23 @@
 #!/usr/bin/env bash
-curl -LO https://github.com/neovim/neovim/releases/download/nightly/nvim-linux-x86_64.tar.gz
-sudo rm -rf /opt/nvim*
-sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
-rm ./nvim-linux-x86_64.tar.gz
+asdf plugin add neovim
+asdf install neovim nightly
+asdf global neovim nightly
 
 DOTFILES_PATH="$HOME/.dotfiles"
 MODULE_PATH="$DOTFILES_PATH/nvim"
 MODULE_FILE_NAME="init.lua"
 MODULE_FILE_PATH="$MODULE_PATH/$MODULE_FILE_NAME"
 SETUP_PATH="$HOME/.config/nvim"
-SETUP_FILE_PATH="$SETUP_PATH/$MODULE_FILE_NAME"
+COLORSCHEME_SETUP_PATH="$HOME/.local/nvim"
 COLORSCHEME_PATH="$HOME/doc/dracula_pro/themes/vim"
-COLORSCHEME_AUTOLOAD_PATH="$COLORSCHEME_PATH/autoload"
-COLORSCHEME_COLORS_PATH="$COLORSCHEME_PATH/colors"
+COLORSCHEME_AUTOLOAD_PATH="$COLORSCHEME_SETUP_PATH/autoload"
+COLORSCHEME_COLORS_PATH="$COLORSCHEME_SETUP_PATH/colors"
 
 ln -sf "$MODULE_PATH" "$SETUP_PATH"
-cp -r "$COLORSCHEME_AUTOLOAD_PATH" "$SETUP_PATH/"
-cp -r "$COLORSCHEME_COLORS_PATH" "$SETUP_PATH/"
+nvim +'call mkdir(stdpath("data")."/site/pack/themes/start", "p")' +q
+cp -R $COLORSCHEME_PATH/ "$(nvim -es +"put =stdpath('data')" +print +'q!')"/site/pack/themes/start/dracula_pro
+#cp -r "$COLORSCHEME_AUTOLOAD_PATH" "$SETUP_PATH/"
+#cp -r "$COLORSCHEME_COLORS_PATH" "$SETUP_PATH/"
 
 # extra steps
 # git config --global url."https://oauth2:${GITLAB_AUTH_TOKEN}@gitlab.com/".insteadOf "https://gitlab.com"
