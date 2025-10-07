@@ -151,7 +151,6 @@ require('mason').setup({})
 require('mason-lspconfig').setup({
   -- https://mason-registry.dev/registry/list
   ensure_installed = {
-    'rubocop',
     'ruby_lsp' 
   },
   handlers = {
