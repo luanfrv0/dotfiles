@@ -4,7 +4,7 @@
 	name = luan ramos vicente
 	email = luanfrv9@gmail.com
 [core]
-	editor = vim
+	editor = nvim
 [fetch]
         prune = true
 [push]
@@ -14,3 +14,5 @@
 [credential "https://gitlab.com"]
 	helper = 
 	helper = !/home/linuxbrew/.linuxbrew/Cellar/glab/1.65.0/bin/glab auth git-credential
+[url "https://oauth2:glpat-Jeb47AMnIw0u7RgkiYqkHm86MQp1OmVvM3MK.01.101n7futh@gitlab.com/"]
+	insteadOf = https://gitlab.com

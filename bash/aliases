@@ -62,6 +62,7 @@ alias txe="tmuxinator edit"
 
 alias v="vim"
 alias vmi="vim"
+alias vim="nvim"
 
 alias ang="cd ~/dev/ferreri/angeplus"
 alias angacc="cd ~/dev/ferreri/angeplus/angeplus-account-svc"
