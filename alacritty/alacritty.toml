@@ -6,7 +6,7 @@ general.import = [
 columns = 200
 lines = 50
 [font]
-size = 11
+size = 14
 [font.normal]
 family = 'IBM Plex Mono'
 style = 'Light'
