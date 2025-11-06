@@ -21,6 +21,18 @@ if [ $# -eq 0 ]; then
   . ~/.dotfiles/typora/setup.sh
   . ~/.dotfiles/chrome/setup.sh
   . ~/.dotfiles/dropbox/setup.sh
+elif [ $1 = "wsl" ];then
+  sudo apt update -y
+
+  . ~/.dotfiles/curl/setup.sh
+  . ~/.dotfiles/gpg/setup.sh
+  . ~/.dotfiles/git/setup.sh
+  . ~/.dotfiles/bash/setup.sh
+  . ~/.dotfiles/tmux/setup.sh
+  . ~/.dotfiles/bat/setup.sh
+  . ~/.dotfiles/asdf/setup.sh
+  . ~/.dotfiles/ibm-plex-mono/setup.sh
+  . ~/.dotfiles/nvim/setup.sh
 else
   . ~/.dotfiles/$1/setup.sh
 fi
