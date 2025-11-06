@@ -1,7 +1,7 @@
-nodejs 24.1.0
+nodejs 25.1.0
 yarn 1.22.22
 ruby 3.2.2
 python 3.13.0t
 java openjdk-23
-glab 1.73.0
+glab 1.74.0
 neovim nightly
