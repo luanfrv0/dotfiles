@@ -21,4 +21,5 @@ cp -R $COLORSCHEME_PATH/ "$(nvim -es +"put =stdpath('data')" +print +'q!')"/site
 
 # extra steps
 # git config --global url."https://oauth2:${GITLAB_AUTH_TOKEN}@gitlab.com/".insteadOf "https://gitlab.com"
-# mason instal ruby-lsp
+# mason install ruby-lsp
+# mason install typescript-language-server

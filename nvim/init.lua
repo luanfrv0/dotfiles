@@ -9,7 +9,7 @@ vim.pack.add({
   {src='https://github.com/mason-org/mason-lspconfig.nvim'},
   {src='https://github.com/hrsh7th/nvim-cmp'},
   {src='https://github.com/hrsh7th/cmp-nvim-lsp'},
-  {src='https://github.com/L3MON4D3/LuaSnip'}
+  {src='https://github.com/L3MON4D3/LuaSnip'},
 })
 
 -- disable netrw at the very start of your init.lua
@@ -28,8 +28,8 @@ vim.cmd("packadd! dracula_pro")
 vim.g.dracula_colorterm = 0
 vim.cmd("colorscheme dracula_pro")
 
-vim.api.nvim_set_hl(0, 'CursorLine', {bg = 32})
-vim.api.nvim_set_hl(0, 'ColorColumn', {bg = 32})
+--vim.api.nvim_set_hl(0, 'CursorLine', {bg = 35})
+--vim.api.nvim_set_hl(0, 'ColorColumn', {bg = 35})
 vim.api.nvim_set_hl(0, 'DraculaTodo', {bg = 'none'})
 
 -- Visual settings
