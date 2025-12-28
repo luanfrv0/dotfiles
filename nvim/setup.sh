@@ -23,3 +23,6 @@ cp -R $COLORSCHEME_PATH/ "$(nvim -es +"put =stdpath('data')" +print +'q!')"/site
 # git config --global url."https://oauth2:${GITLAB_AUTH_TOKEN}@gitlab.com/".insteadOf "https://gitlab.com"
 # mason install ruby-lsp
 # mason install typescript-language-server
+
+bash "$DOTFILES_PATH/getnf/setup.sh"
+bash "$DOTFILES_PATH/ibm-plex-mono/setup.sh"
