@@ -8,11 +8,11 @@ lines = 50
 [font]
 size = 13
 [font.normal]
-family = 'IBM Plex Mono'
-style = 'Light'
+#family = 'IBM Plex Mono'
+#style = 'Light'
 [font.italic]
-family = 'IBM Plex Mono'
-style = 'Light Italic'
+#family = 'IBM Plex Mono'
+#style = 'Light Italic'
 #[colors]
 #primary:
 #  background: '0x0b0d0f'
