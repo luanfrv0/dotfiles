@@ -40,6 +40,8 @@ alias gstd="g stash drop"
 alias gstl="g stash list"
 alias gstad="g stash list apply && g stash drop"
 alias grp="g grep"
+alias gm="g merge"
+alias gmm="g merge main"
 
 alias d="docker"
 alias c="docker compose"
