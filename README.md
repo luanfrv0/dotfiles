@@ -44,6 +44,17 @@ wget -qO - https://raw.githubusercontent.com/luanrv00/dotfiles/refs/heads/main/b
 | `<tab>`     | navigate through tabs |
 | `gd`        | open documentation for code fragment under cursor |
 | `gi`        | go to implementation of code fragment under cursor |
+| `a`         | add file |
+| `c`         | copy file/dir |
+| `x`         | cut file/dir |
+| `p`         | paste file/dir |
+| `d`         | delete file/dir |
+| `r`         | rename file/dir |
+| `<C-t>`     | open on tab |
+| `<C-x>`     | open on horizontal split |
+| `<C-v>`     | open on vertical split |
+| `E`         | expand all |
+| `W`         | close all |
 
 ## aliases for bash
 
