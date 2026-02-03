@@ -10,6 +10,7 @@ vim.pack.add({
   {src='https://github.com/hrsh7th/nvim-cmp'},
   {src='https://github.com/hrsh7th/cmp-nvim-lsp'},
   {src='https://github.com/L3MON4D3/LuaSnip'},
+  {src='https://github.com/windwp/nvim-ts-autotag'},
 })
 
 -- disable netrw at the very start of your init.lua
@@ -179,3 +180,10 @@ cmp.setup({
   },
 })
 
+require('nvim-ts-autotag').setup({
+  opts = {
+    enable_close = true, -- Auto close tags
+    enable_rename = true, -- Auto rename pairs of tags
+    enable_close_on_slash = false -- Auto close on trailing </
+  },
+})
