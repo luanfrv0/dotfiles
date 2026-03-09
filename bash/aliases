@@ -78,6 +78,7 @@ alias angsysw="cd ~/dev/ferreri/angeplus/angeplus-system-event-web"
 alias anglink="cd ~/dev/ferreri/angeplus/angeplus-link-svc"
 alias angsup="cd ~/dev/ferreri/angeplus/angeplus-supply-svc"
 alias angsupw="cd ~/dev/ferreri/angeplus/angeplus-supply-web"
+alias angcomp="cd ~/dev/ferreri/angeplus/angeplus-component-lib"
 
 alias tsks="cd ~/dev/tsks"
 alias tsksw="cd ~/dev/tsks/web"
