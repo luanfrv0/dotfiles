@@ -19,5 +19,6 @@ sudo apt update -y
 . ~/.dotfiles/alacritty/setup.sh
 . ~/.dotfiles/ssh/setup.sh
 . ~/.dotfiles/ang/setup.sh
+#. ~/.dotfiles/yarn/setup.sh
 #. ~/.dotfiles/curl/setup.sh
 #. ~/.dotfiles/gpg/setup.sh
